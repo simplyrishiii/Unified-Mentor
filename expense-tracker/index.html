@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Expense Tracker</h1>
+  </header>
+
+  <main>
+    <section id="income">
+      <h2>Income</h2>
+      <!-- Add income transaction form -->
+        <form>
+          <input type="text" id="income-date" placeholder="Date">
+          <input type="text" id="income-description" placeholder="Description"> 
+          <input type="number" id="income-amount" placeholder="Amount">
+          <button>Add Income</button> 
+        </form>
+    </section>
+
+    <section id="expenses">
+      <h2>Expenses</h2>
+      <!-- Add expense transaction form -->
+      <form>
+        <input type="text" id="expense-date" placeholder="Date">
+        <input type="text" id="expense-description" placeholder="Description">
+        <input type="number" id="expense-amount" placeholder="Amount">
+        <button>Add Expense</button> 
+      </form>
+    </section>
+
+    <section id="transactions">
+      <h2>Transactions</h2>
+      <ul id="transaction-list">
+        <!-- Display transactions here -->
+        
+      </ul>
+    </section>
+
+    <section id="summary">
+      <h2>Summary</h2>
+      <div id="total-income">
+        <h3>Total Income: <span id="income-amount">$0.00</span></h3>
+      </div>
+      <div id="total-expenses">
+        <h3>Total Expenses: <span id="expenses-amount">$0.00</span></h3>
+      </div>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
